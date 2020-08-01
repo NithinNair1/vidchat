@@ -49,7 +49,7 @@
         <br />
         <br />
 
-        <button class="btn btn-danger" onclick="windowClose();">
+        <button class="btn btn-danger" onclick="self.close()">
           Leave Meeting
         </button>
       </div>
@@ -67,12 +67,7 @@
         </div>
       </div>
     </div>
-    <script language="javascript" type="text/javascript">
-      function windowClose() {
-        window.open("", "_parent", "");
-        window.close();
-      }
-    </script>
+
     <script src="/socket.io/socket.io.js"></script>
     <script src="bundle.js"></script>
   </body>

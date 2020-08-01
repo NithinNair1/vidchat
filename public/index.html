@@ -38,19 +38,25 @@
       <hr />
     </div>
     <div class="container-fluid">
-      <select
-        id="filter"
-        class="bg-primary text-light ml-2 mt-2 select font-weight-bold border"
-      >
-        <option value="none">Normal</option>
-        <option value="grayscale(100%)">B & W</option>
-        <option value="sepia(100%)">Retro</option>
-        <option value="contrast(150%)">Beautify</option>
-        <option value="blur(20px)">Privacy</option>
-        <option value="invert(100%)">Invert</option>
-        <option value="hue-rotate(180deg">Avatar</option>
-        <option value="saturate(25)">Heatstroke</option>
-      </select>
+      <div class="container text-center">
+        Filter:
+        <select
+          id="filter"
+          class="bg-primary text-light ml-2 mt-2 select font-weight-bold border"
+        >
+          <option value="none">Normal</option>
+          <option value="grayscale(100%)">B & W</option>
+          <option value="sepia(100%)">Retro</option>
+          <option value="contrast(150%)">Beautify</option>
+          <option value="blur(20px)">Privacy</option>
+          <option value="invert(100%)">Invert</option>
+          <option value="hue-rotate(180deg">Avatar</option>
+          <option value="saturate(25)">Heatstroke</option>
+        </select>
+        <br />
+        <br />
+        <button class="btn btn-danger">Leave Meeting</button>
+      </div>
       <div class="row h-90 w-100">
         <div class="col-12 col-sm-6 d-flex justify-content-center">
           <div class="embed-responsive embed-responsive-16by9">
@@ -64,9 +70,6 @@
           ></div>
         </div>
       </div>
-    </div>
-    <div class="container text-center">
-      <button class="btn btn-danger">Leave Meeting</button>
     </div>
 
     <script src="/socket.io/socket.io.js"></script>

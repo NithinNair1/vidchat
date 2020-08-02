@@ -1,18 +1,12 @@
 <html>
   <head>
-    <title>NVidChat</title>
+    <title>In Meeting | Instantino Chat</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <link
-      rel="icon"
-      href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZ_Y5qIFDN8Prcs7xCA_HD4Byje6wT-T9CXA&usqp=CAU"
-      type="image/x-icon"
-    />
-
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -24,7 +18,7 @@
 
   <body>
     <div class="container text-center text-primary">
-    <h1>Video Chat</h1>
+    <h1>Instantino Chat</h1>
     <input class="form-check-input" type="checkbox" id="theme" />
     <label class="form-check-label text-primary" for="theme">
       Darcula(Theme)
@@ -38,11 +32,12 @@
     </div>
     <div class="container-fluid">
       <div class="container text-center">
-        Filter:
-        <select
+        <div class="row">
+          <div class="col-6 text-center py-3">
+        <select class="form-control col-md-10" 
           id="filter"
-          class="bg-primary text-light ml-2 mt-2 select font-weight-bold border"
         >
+        <option value="none" disabled>Video Filter</option>
           <option value="none">Normal</option>
           <option value="grayscale(100%)">B & W</option>
           <option value="sepia(100%)">Retro</option>
@@ -53,7 +48,7 @@
           <option value="hue-rotate(190deg)">Genie</option>
           <option value="hue-rotate(270deg)">Thanos</option>
           <option value="saturate(10)">Heatstroke</option>
-        </select>
+        </select></div></div>
         <br /><br />
       </div>
       <div class="row h-60 w-100">
@@ -83,7 +78,86 @@
           </p>
         </div>
       </div>
+
+    <hr>
     </div>
+    <!-- <footer class="text-center bg-primary text-light">
+      <h1>Powered By Instantino Inc.</h1>
+      <p>copyright <a href="https://instagram.com/nithinnair01" target="_blank" class="text-light">@nithinnair01</a></p>
+      
+    </footer> -->
+    <!-- <script>
+      function windowClose() {
+  window.open("", "_parent", "");
+  window.close();
+}
+
+    </script> -->
+
+    <!-- <footer class="container font-small text-light bg-primary">
+
+      <div class="text-center py-3">© 2020 Copyright: 
+        <a class="text-light" target="blank" href="https://instagram.com/nithinnair01"> @nithinnair01</a>
+      </div>
+    
+    </footer> -->
+
+
+
+<!-- Footer -->
+<footer class="page-footer text-primary  font-small px-4 py-2">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Terms of Service</h5>
+        <p>I hope you follow the <a class="text-success" href="./terms.html">Terms of Service</a>.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase font-weight-bold">Rate the Meeting</h5>
+        <p>I hope you love the app and don't forget to report bugs if you find them. Hence, help me make the platform better. Share your experiences <a href="" class="text-success">here</a> </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Text -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a class="text-success" href="https://instagram.com/nithinnair01"> @nithinnair01</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+
+
+
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="bundle.js"></script>
